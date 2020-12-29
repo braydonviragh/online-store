@@ -1,0 +1,133 @@
+.header {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header__logo {
+  width: 100px;
+  object-fit: contain;
+  margin: 0 20px;
+}
+
+.header__search {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  flex-direction: row;
+  border-radius: 24px;
+}
+
+.header__optionLineOne {
+  font-size: 14px;
+}
+
+.header__optionLineTwo {
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.header__optionBasket {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+.header__optionBasket svg,
+.header__optionBasket span {
+  font-size: 2em;
+}
+
+.header__basketCount {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.header__nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.header__option {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: white;
+}
+.header__signin {
+  display: flex;
+  flex-direction: row;
+}
+
+/*MOBILE LAYOUT*/
+@media (max-width: 800px) {
+  .header {
+    font-size: 0.5em;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: #131921;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+  }
+
+  .header__logo {
+    width: 75px;
+    object-fit: contain;
+    margin: 0 20px;
+    margin: 9px 0px;
+  }
+
+  .header__search {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    border-radius: 24px;
+  }
+
+  .header__optionLineOne {
+    font-size: 12px;
+  }
+
+  .header__optionLineTwo {
+    font-size: 14px;
+    font-weight: 800;
+  }
+
+  .header__optionBasket {
+    display: flex;
+    align-items: center;
+    color: white;
+  }
+
+  .header__basketCount {
+    margin-left: 14px;
+    margin-right: 14px;
+  }
+
+  .header__nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header__option {
+    display: flex;
+    flex-direction: column;
+    margin-left: 12px;
+    color: white;
+  }
+  .header__optionBasket svg,
+  .header__optionBasket span {
+    width: 20px;
+    font-size: 20px;
+    height: auto;
+  }
+}
